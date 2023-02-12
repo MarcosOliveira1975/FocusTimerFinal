@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    place-content: center;
+}
+
 .timercontrols {
    text-align: center;
 }
@@ -14,13 +19,16 @@
     font-weight: 500;
 }
 
-
 main {
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+}
+
+.timercontrols {
+    margin-right: 50px;
 }
 
 #controls button {

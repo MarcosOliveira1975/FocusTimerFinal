@@ -134,8 +134,6 @@ buttonRain.addEventListener('click', function () {
     buttonForest.classList.remove('active')
     buttonCafeteria.classList.remove('active')
     buttonFireplace.classList.remove('active')
-
-    
     
     buttonPressRain.play()
     buttonPressCafeteria.pause()
