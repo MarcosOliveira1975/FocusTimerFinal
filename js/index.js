@@ -124,6 +124,15 @@ buttonForest.addEventListener('click', function () {
     buttonPressCafeteria.pause()
     buttonPressRain.pause()
     buttonPressFireplace.pause()
+
+    buttonRainWhite.classList.add('hide')
+    buttonRain.classList.remove('hide')
+
+    buttonCafeteriaWhite.classList.add('hide')
+    buttonCafeteria.classList.remove('hide')
+
+    buttonFireplaceWhite.classList.add('hide')
+    buttonFireplace.classList.remove('hide')
 })
 
 buttonRain.addEventListener('click', function () {
@@ -139,6 +148,15 @@ buttonRain.addEventListener('click', function () {
     buttonPressCafeteria.pause()
     buttonPressForest.pause()
     buttonPressFireplace.pause()
+
+    buttonForestWhite.classList.add('hide')
+    buttonForest.classList.remove('hide')
+
+    buttonCafeteriaWhite.classList.add('hide')
+    buttonCafeteria.classList.remove('hide')
+
+    buttonFireplaceWhite.classList.add('hide')
+    buttonFireplace.classList.remove('hide')
 
 })
 
@@ -156,6 +174,15 @@ buttonCafeteria.addEventListener('click', function () {
     buttonPressForest.pause()
     buttonPressRain.pause()
     buttonPressFireplace.pause()
+
+    buttonForestWhite.classList.add('hide')
+    buttonForest.classList.remove('hide')
+
+    buttonRainWhite.classList.add('hide')
+    buttonRain.classList.remove('hide')
+
+    buttonFireplaceWhite.classList.add('hide')
+    buttonFireplace.classList.remove('hide')
 })
 
 buttonFireplace.addEventListener('click', function () {
@@ -171,6 +198,16 @@ buttonFireplace.addEventListener('click', function () {
     buttonPressForest.pause()
     buttonPressCafeteria.pause()
     buttonPressRain.pause()
+
+    buttonForestWhite.classList.add('hide')
+    buttonForest.classList.remove('hide')
+
+    buttonRainWhite.classList.add('hide')
+    buttonRain.classList.remove('hide')
+
+    buttonCafeteriaWhite.classList.add('hide')
+    buttonCafeteria.classList.remove('hide')
+
 })
 
 StopButtonSound.addEventListener('click', function() {
