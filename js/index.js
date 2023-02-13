@@ -38,9 +38,18 @@ function updateDisplay (minutes, seconds) {
     secondsDisplay.textContent = String(seconds).padStart(2, "0")
 }
 
-function reset() {
+function removePlayAddPause() {
     buttonPlay.classList.remove('hide')
     buttonPause.classList.add('hide')
+}
+
+function addPlayRemovePause() {
+    buttonPlay.classList.add('hide')
+    buttonPause.classList.remove('hide')
+}
+
+function reset() {
+    removePlayAddPause()
     updateDisplay(0, 0)
     clearTimeout(timerTimeOut)
 
@@ -76,8 +85,7 @@ function countDown() {
 
 
 buttonPlay.addEventListener('click', function () {
-    buttonPlay.classList.add('hide')
-    buttonPause.classList.remove('hide')
+    addPlayRemovePause()
 
     countDown()
 
@@ -85,16 +93,14 @@ buttonPlay.addEventListener('click', function () {
 })
 
 buttonPause.addEventListener('click', function(){
-    buttonPause.classList.add('hide')
-    buttonPlay.classList.remove('hide')   
+    removePlayAddPause()   
     clearTimeout(timerTimeOut)
     buttonPress.play()
 
 })
 
 buttonStop.addEventListener('click', function(){
-    buttonPlay.classList.remove('hide')
-    buttonPause.classList.add('hide')
+    removePlayAddPause()
 
     reset()
     buttonPress.play()
@@ -180,6 +186,7 @@ buttonCafeteria.addEventListener('click', function () {
 
     buttonRainWhite.classList.add('hide')
     buttonRain.classList.remove('hide')
+
 
     buttonFireplaceWhite.classList.add('hide')
     buttonFireplace.classList.remove('hide')
